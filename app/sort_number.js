@@ -11,5 +11,3 @@ elementoMaiorValor.textContent = maiorValor
 function gerarNumeroAleatorio() {
     return Math.floor(Math.random() * (maiorValor-menorValor+1)+menorValor);
 }
-
-console.log(numeroAleatorio)
