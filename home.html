@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe o número</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/img/hat-wizard-solid.svg" type="image/x-icon">
+</head>
+<body>
+    <div id="logo-img">
+        <i class="fa-solid fa-wand-sparkles"></i> <i class="fa-solid fa-hat-wizard"></i>
+    </div>
+    <h1>Acerte o Número Secreto</h1>
+    <h3>Selecione a Dificuldade:</h3>
+    <form action="game.html" method="get" id="form">
+        <input type="range" name="dificuldade" id="dificuldade" min=1 max=4 value="1" oninput="this.nextElementSibling.value = this.value">
+        <output class="body-text">1</output>
+        <input class="buttons box" type="submit" value="Iniciar Jogo!">
+    </form>
+</body>
+</html>
